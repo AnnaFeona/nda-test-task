@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>test Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__title">Form test-task</div>
+      <ul class="header__contacts">
+        <li>
+          <a href="https://www.linkedin.com/in/hanna-hlavatskikh-02150495/">
+            <img src="./assets/linkedin.svg" alt="icon">
+            Hanna Hlavatskikh
+          </a>
+        </li>
+        <li>
+          <a href="http://https://github.com/AnnaFeona">
+            <img src="./assets/github.svg" alt="icon">
+            AnnaFeona
+          </a>
+        </li>
+        <li>
+          <a href="mailto:glavatskikh.anna@gmail.com">
+            <img src="./assets/mail.png" alt="icon">
+            glavatskikh.anna@gmail.com
+          </a>
+        </li>
+      </ul>
+  </header>
+
+  <main class="main">
+    <div class="main-form__container">
+      <form class="main-form__form" id="main-form">
+        <div class="main-form__field">
+          <label class="main-form__label" for="name">Enter your name: </label>
+          <input class="main-form__input" type="text" name="name" id="name" placeholder="Ex. John Doe" required />
+        </div>
+        <div class="main-form__field">
+          <label class="main-form__label" for="email">Enter your email: </label>
+          <input class="main-form__input" type="email" name="email" id="email" placeholder="Ex. pat@example.com" required />
+        </div>
+        <div class="main-form__field">
+          <label class="main-form__label" for="password">Enter password min length 8 characters: </label>
+          <input class="main-form__input" type="password" name="password" id="password" minlength="8" required />
+        </div>
+        <div class="main-form__field">
+          <button class="main-form__submit" type="submit">Submit</button>
+        </div>
+
+      </form>
+    </div>
+
+    <div class="form-value__container"></div>
+  </main>
+
+</body>
+<script src="index.js"></script>
+</html>
